@@ -1,0 +1,92 @@
+@import "tailwindcss";
+:root {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --brand-primary: #FB2C36;
+  
+
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #FB2C36;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #FB2C36;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+/* Carousel styles */
+.carousel-item {
+  background-color: red;
+  padding: 10px;
+}
+
+/* global.css */
+.section-title {
+  font-size: 2.25rem;      /* equivalent to text-4xl */
+  font-weight: 500;        /* equivalent to font-medium */
+  margin-bottom: 3rem;     /* equivalent to mb-12 */
+  color: #1f2937;          /* equivalent to text-gray-800 */
+}
+
+/* Responsive style for md:text-4xl */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.25rem;    /* same as text-4xl on md screens */
+  }
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: none;
+  transition: border-color 0.25s;
+}
+.button-primary:hover {
+  background-color: #C10007;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+
+
+ 
+}
